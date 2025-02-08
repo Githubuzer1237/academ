@@ -1,0 +1,52 @@
+.gallery {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 20px;
+    overflow: hidden;
+   .photoContainer {
+     width: calc(50% - 20px);
+     cursor: pointer;
+     overflow: hidden;
+     border-radius: 10px;
+     height: auto;
+     img {
+       width: 100%;
+       height: 500px;
+       display: block;
+       transition: transform 0.3s ease-out;
+
+
+       @media (max-width: 1200px) {
+        height: auto;
+       }
+     }
+   }
+ }
+ 
+ .lightbox {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background: rgba(0, 0, 0, 0.8);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 1000;
+   cursor: pointer;
+ 
+   .lightboxImage {
+     max-width: 90%;
+     max-height: 90%;
+     border-radius: 10px;
+   }
+ }
+ 
+
+ .title {
+   padding: 20px;
+   font-family: Soyuz Grotesk;
+   font-size: clamp(1.875rem, 1.3942rem + 1.5385vw, 3.125rem);
+ }

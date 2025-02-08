@@ -1,0 +1,71 @@
+.cert {
+  height: 140dvh;
+  margin-bottom: 200px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  h2, p {
+  font-family: 'Soyuz Grotesk';
+  
+  }
+
+  h2 {
+   font-size: 50px;
+  }
+  p {
+   font-size: 30px;
+   color: gray;
+  }
+
+
+  @media (max-width: 500px) {
+   padding: 20px;
+  }
+  @media (max-width: 400px) {
+   padding: 10px;
+  }
+}
+
+
+.lightbox {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background: rgba(0, 0, 0, 0.8);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 1000;
+   cursor: pointer;
+ }
+ 
+ .lightboxImage {
+   max-width: 90%;
+   max-height: 90%;
+   border-radius: 10px;
+ }
+ .image {
+   border-radius: 10px;
+   height: auto; 
+    width: 100%;
+    max-width: 800px;
+    margin: 10px;
+    @media (max-width: 800px) {
+   padding: 10px;
+      margin: 0;
+      border-radius: 20px;
+    }
+ }

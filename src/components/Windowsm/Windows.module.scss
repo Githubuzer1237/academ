@@ -1,0 +1,18 @@
+.windows {
+   height: 100dvh;
+
+  position: relative;
+  @media (max-width: 1300px) {
+    display: none;
+  }
+}
+.pillow {
+  width: 400px;
+}
+.pillows {
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  z-index: -1;
+}

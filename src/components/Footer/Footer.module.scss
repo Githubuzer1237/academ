@@ -1,0 +1,72 @@
+.svg {
+   width: 100%;
+   max-width: 400px;
+   animation: rotate 10s infinite ;
+
+   @media (max-width: 1000px) {
+      display: none;
+   }
+}
+
+@keyframes rotate {
+   from {
+      rotate: 0deg;
+   }
+   to {
+      rotate: 360deg;
+   }
+}
+.wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  margin-top: 200px;
+}
+
+.footer {
+  padding: 120px;
+}
+
+.form {
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+   padding: 50px;
+   border: 2px solid black;
+   border-radius: 40px;
+   max-width: 800px;
+   width: 100%; 
+   
+    @media (max-width: 600px) {
+      border: none;
+      align-items: center;
+      background-color: #e0e0e0;
+      color: #333333;
+      padding: 30px;
+    }
+    @media (max-width: 410px) {
+      padding: 10px;
+    }
+
+   h1 {
+      text-transform: uppercase;
+      letter-spacing: 4px;
+   }
+
+   input {
+      max-width: 500px;
+      width: 100%;
+      padding: 20px;
+      border-radius: 20px;
+      
+
+   }
+
+   button {
+      max-width: 100px;
+      width: 100%;
+      padding: 20px;
+      border-radius: 20px;
+      background-color: #fff;
+   }
+}
